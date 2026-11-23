@@ -1,0 +1,123 @@
+
+.navbar {
+  height: 75px;
+  background: #111827;
+  color: white;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #334155;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e3a5f;
+  border-radius: 12px;
+  font-size: 23px;
+}
+
+.navbar-left h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.navbar-left h2 span {
+  color: #38bdf8;
+}
+
+.navbar-left small {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.vault-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4ade80;
+  background: #142d2b;
+  padding: 9px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.status-dot {
+  height: 8px;
+  width: 8px;
+  background: #4ade80;
+  border-radius: 50%;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 1px solid #475569;
+  padding-left: 20px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.user-details h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.user-details span {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.logout-btn {
+  padding: 10px 16px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 0 12px;
+  }
+
+  .vault-status,
+  .user-details {
+    display: none;
+  }
+
+  .navbar-right {
+    gap: 12px;
+  }
+}
